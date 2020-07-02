@@ -1,21 +1,25 @@
 [{
   "name": "Norweigan Wood",
   "author": "Haruki Murakami",
+  "review" : "One of my all time favorite books. Outside of his normal style, but still really hauntingly beautiful in the way all his books are. ",
   "id": "1"
 },
   {
   "name": "Bel Canto",
   "author": "Anne Patchett",
+    "review":"Much faster than a lot of her other books. Takes just long enough to get to the end that you forget the original problem. Could be a musical." ,
     "id": "2"
 },
   {
   "name": "Little Fires Everywhere",
   "author": "Celeste Ng",
+    "review": "Holy cow, read this in a day. Really makes you think about what's behind these \"planned neighborhoods\"",
     "id": "3"
   },
   {
   "name": "The Alchemist",
   "author": "Paulo Coelho",
+    "review": "Another top all time book. Short read, couple hours, but so much beautiful meaning packed in to a relatively light story.",
     "id": "4"
 }
 ]

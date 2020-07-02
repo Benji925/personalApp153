@@ -8,17 +8,13 @@ const image = { uri: "https://i.pinimg.com/originals/c1/97/ba/c197ba63b1ff4c94c1
 
 
 export default function HomeScreen({navigation}) {
-    const [selectedData,setSelectedData] = useState(theData);
     return (
         <ScrollView>
         <ImageBackground source={image} style={{width: '100%', height: '100%'}}>
         <View style={{paddingTop:30}}>
-            <Text> Welcome to book list!</Text>
-            <Button title="Go to Details"
+            <Button title="Go To Wanted Books!"
                     onPress={() => navigation.navigate('NewBooksScreen')}
             />
-            <Button title="Show my books!"
-                    onPress={()=>setSelectedData(theData)}/>
             <View
                 style={{
                     flexDirection: 'column',
@@ -32,10 +28,13 @@ export default function HomeScreen({navigation}) {
                                     borderWidth: 3,
                                     borderColor: 'black',
                                     marginTop:15
-                           }}>
+                           }}
+
+                    >
                         <View style={{flexDirection: 'row', alignItems: 'flex-start', width:150,wrap:'yes'}}>
                             <View>
-                                <Text style={{padding: 10, paddingVertical: 30 ,color: 'gold', size: '', justifyContent: 'center'}}>
+                                <Text style={{padding: 10, paddingVertical: 30 ,color: 'gold', justifyContent: 'center'}}
+                                      onPress={() => navigation.navigate('BookDetails',selectedData)}>
                                 {selectedData.name}
                                 </Text>
                                 <Text style={{justifyContent:'center', padding:15}}>{selectedData.author}</Text>
